@@ -49,10 +49,10 @@
 		2AA41BF11C57462F00B1BF69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AA41BF41C57462F00B1BF69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AA41BF61C57462F00B1BF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2AA41BFB1C57462F00B1BF69 /* 微信精选Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "微信精选Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA41BFB1C57462F00B1BF69 /* 微信精选.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "微信精选.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AA41BFF1C57462F00B1BF69 /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
 		2AA41C011C57462F00B1BF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2AA41C061C57462F00B1BF69 /* 微信精选UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "微信精选UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA41C061C57462F00B1BF69 /* 微信精选.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "微信精选.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AA41C0A1C57462F00B1BF69 /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		2AA41C0C1C57462F00B1BF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AA41C181C574A3100B1BF69 /* CellDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellDetailViewController.h; sourceTree = "<group>"; };
@@ -105,8 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				2AA41BE21C57462F00B1BF69 /* 微信精选.app */,
-				2AA41BFB1C57462F00B1BF69 /* 微信精选Tests.xctest */,
-				2AA41C061C57462F00B1BF69 /* 微信精选UITests.xctest */,
+				2AA41BFB1C57462F00B1BF69 /* 微信精选.xctest */,
+				2AA41C061C57462F00B1BF69 /* 微信精选.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,7 +224,7 @@
 			);
 			name = "微信精选Tests";
 			productName = "微信精选Tests";
-			productReference = 2AA41BFB1C57462F00B1BF69 /* 微信精选Tests.xctest */;
+			productReference = 2AA41BFB1C57462F00B1BF69 /* 微信精选.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		2AA41C051C57462F00B1BF69 /* 微信精选UITests */ = {
@@ -242,7 +242,7 @@
 			);
 			name = "微信精选UITests";
 			productName = "微信精选UITests";
-			productReference = 2AA41C061C57462F00B1BF69 /* 微信精选UITests.xctest */;
+			productReference = 2AA41C061C57462F00B1BF69 /* 微信精选.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -256,6 +256,7 @@
 				TargetAttributes = {
 					2AA41BE11C57462F00B1BF69 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = GD5B8K7TJ4;
 					};
 					2AA41BFA1C57462F00B1BF69 = {
 						CreatedOnToolsVersion = 7.2;
@@ -396,7 +397,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -418,6 +420,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -440,7 +443,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -455,6 +459,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -465,10 +470,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "微信精选/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "kai.----";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = WeChatChosen;
+				PRODUCT_NAME = "微信精选";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -476,10 +485,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "微信精选/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "kai.----";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = WeChatChosen;
+				PRODUCT_NAME = "微信精选";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -490,7 +503,7 @@
 				INFOPLIST_FILE = "微信精选Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kai.----Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "微信精选";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/微信精选.app/微信精选";
 			};
 			name = Debug;
@@ -502,7 +515,7 @@
 				INFOPLIST_FILE = "微信精选Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kai.----Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "微信精选";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/微信精选.app/微信精选";
 			};
 			name = Release;
@@ -513,7 +526,7 @@
 				INFOPLIST_FILE = "微信精选UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kai.----UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "微信精选";
 				TEST_TARGET_NAME = "微信精选";
 				USES_XCTRUNNER = YES;
 			};
@@ -525,7 +538,7 @@
 				INFOPLIST_FILE = "微信精选UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "kai.----UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "微信精选";
 				TEST_TARGET_NAME = "微信精选";
 				USES_XCTRUNNER = YES;
 			};

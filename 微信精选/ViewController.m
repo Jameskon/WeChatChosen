@@ -102,7 +102,7 @@
     [super viewDidLoad];
     UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:self];
     [UIApplication sharedApplication].delegate.window.rootViewController = navi;
-    self.title = @"微信精选";
+    self.title = @"微信热门";
     
     // 设置footerView
     self.myTable.tableFooterView = [[UIView alloc]init];
